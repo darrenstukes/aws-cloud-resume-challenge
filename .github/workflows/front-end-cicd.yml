@@ -15,7 +15,7 @@ jobs:
           args: --acl public-read --follow-symlinks --delete 
                   --exclude ".git/*" --exclude ".github/*"
                   --exclude ".gitignore" --exclude "README.md"
-                  $SOURCE_DIR s3://${{ secrets.darren-cloud-resume-challenge}}/Resume
+                  $SOURCE_DIR s3://${{ secrets.darren-cloud-resume-challenge}}/index.html
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
